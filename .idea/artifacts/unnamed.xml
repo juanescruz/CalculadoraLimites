@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="archive" name="unnamed.jar">
+      <element id="file-copy" path="$USER_HOME$/Descargas/Evaluar funciones matemáticas/lib/ext-1.1.1.jar" />
+      <element id="file-copy" path="$USER_HOME$/Descargas/Evaluar funciones matemáticas/lib/jep-2.4.1.jar" />
+    </root>
+  </artifact>
+</component>
