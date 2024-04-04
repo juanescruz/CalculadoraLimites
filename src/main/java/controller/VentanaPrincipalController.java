@@ -27,12 +27,12 @@ public class VentanaPrincipalController {
         resultados.add(compY);
         resultados.add(compZ);
         String resultadoFinal="";
-        if(resultados.contains("NaN")){
-           if(resultados.get(0).contains("NaN" )){
+        if(resultados.contains("NaN")||resultados.contains("infinito")){
+           if(resultados.get(0).contains("NaN" )|| resultados.get(0).contains("infinito")){
                resultadoFinal="El limite no existe porque el límite en X no existe";
-           } else if (resultados.get(1).contains("NaN")) {
+           } else if (resultados.get(1).contains("NaN")||  resultados.get(1).contains("infinito")) {
                resultadoFinal="El limite no existe porque el límite en Y no existe";
-           } else if (resultados.get(2).contains("NaN")) {
+           } else if (resultados.get(2).contains("NaN")|| resultados.get(2).contains("infinito")) {
                resultadoFinal="El limite no existe porque el limite en Z no existe";
            }
         }
@@ -52,7 +52,7 @@ public class VentanaPrincipalController {
         while(Math.abs(valorDer-valorIzq)>= 0.0001){
             System.out.println(""+propia.getResultado());
             if((""+propia.getResultado()).contains("Infinity")){
-                return("Tiende a infinito");
+                return("infinito");
             } else if ((""+propia.getResultado()).contains("NaN")) {
                 return("NaN");
             }
